@@ -37,6 +37,8 @@ $client = SumatraClientFactory::factory(
 $argument = (new Kunden_einwilligung_argument())
     ->withBegruendung('John Snow')
     ->withAnrede('Herr')
+    ->withNewsletter(true)
+    ->withZuname('Albrecht')
     ->withEmail('test@example.com');
 
 try {
@@ -49,7 +51,6 @@ try {
 ```
 
 
-
 ### Development Setup
 
 ```bash
@@ -57,8 +58,7 @@ composer install --ignore-platform-reqs
 docker-compose up -d
 docker-compose exec php bash
 apt-get update
-apt-get install libxml2-dev
+apt-get install libxml2-dev -y
 docker-php-ext-install soap
 php -S 0.0.0.0:80
 ```
-

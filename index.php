@@ -18,6 +18,8 @@ $client = SumatraClientFactory::factory(
 $argument = (new Kunden_einwilligung_argument())
     ->withBegruendung('John Snow')
     ->withAnrede('Herr')
+    ->withNewsletter(true)
+    ->withZuname('Albrecht')
     ->withEmail('test@example.com');
 
 try {
