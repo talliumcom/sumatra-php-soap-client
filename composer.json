@@ -1,5 +1,5 @@
 {
-  "name": "a2ncer/sumatra-php-soap-client",
+  "name": "talliumcom/sumatra-php-soap-client",
   "description": "Sumatra API SoapClient library",
   "type": "library",
   "license": "MIT",

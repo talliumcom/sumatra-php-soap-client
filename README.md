@@ -1,18 +1,22 @@
-[![Installs](https://img.shields.io/packagist/dt/a2ncer/sumatra-php-soap-client.svg)](https://packagist.org/packages/a2ncer/sumatra-php-soap-client/stats)
-[![Packagist](https://img.shields.io/packagist/php-v/a2ncer/sumatra-php-soap-client.svg)](https://packagist.org/packages/a2ncer/sumatra-php-soap-client)
+[![Installs](https://img.shields.io/packagist/dt/talliumcom/sumatra-php-soap-client.svg)](https://packagist.org/packages/talliumcom/sumatra-php-soap-client/stats)
+[![Packagist](https://img.shields.io/packagist/php-v/talliumcom/sumatra-php-soap-client.svg)](https://packagist.org/packages/talliumcom/sumatra-php-soap-client)
 
 
 ## SOAP Client for Sumatra
 
+### Requirements
+
+* php >7.1
+* ext-soap 
+* ext-xml
+
 ### Installation
 ```bash
-composer require a2ncer/sumatra-php-soap-client:dev-master
-
+composer require talliumcom/sumatra-php-soap-client:dev-master
 ```
 
 ### Usage 
 ```php
-
 <?php
 
 include_once 'vendor/autoload.php';
@@ -42,7 +46,6 @@ try {
 } catch (Exception $exception) {
     echo $exception->getMessage();
 }
-
 ```
 
 
