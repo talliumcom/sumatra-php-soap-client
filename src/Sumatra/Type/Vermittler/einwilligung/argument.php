@@ -2,7 +2,9 @@
 
 namespace Sumatra\Type;
 
-class Vermittler_einwilligung_argument
+use Phpro\SoapClient\Type\RequestInterface;
+
+class Vermittler_einwilligung_argument implements RequestInterface
 {
 
     /**
