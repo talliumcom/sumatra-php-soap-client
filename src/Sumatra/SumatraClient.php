@@ -28,7 +28,7 @@ class SumatraClient extends Client
 
     public function vermittler_einwilligung(\Sumatra\Type\vermittler_einwilligung_argument $vermittler_einwilligung_argument): \Sumatra\Type\vermittler_einwilligung_response
     {
-        return $this->call('vermittler_einwilligung_argument', $vermittler_einwilligung_argument);
+        return $this->call('vermittler_einwilligung', $vermittler_einwilligung_argument);
     }
 
     public function vermittler_abgleich(\Sumatra\Type\abgleich_argument $abgleich_argument): \Sumatra\Type\vermittler_abgleich_response
