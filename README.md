@@ -27,11 +27,13 @@ use Sumatra\Type\Kunden_einwilligung_argument;
 $wsdl = 'http://example.com/sumatra.wsdl';
 $username = 'username';
 $password = 'password';
+$options = []; // @see http://php.net/manual/en/soapclient.soapclient.php#refsect1-soapclient.soapclient-parameters
 
 $client = SumatraClientFactory::factory(
     $wsdl,
     $username,
-    $password
+    $password,
+    $options
 );
 
 $argument = (new Kunden_einwilligung_argument())
